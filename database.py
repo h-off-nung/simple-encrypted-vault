@@ -96,6 +96,15 @@ class Database:
         conn.commit()
         conn.close()
 
+    def delete_password(self, email, name):
+        conn = self.connect_db()
+        cursor = conn.cursor()
+        cursor.execute('''
+        DELETE FROM passwords WHERE email = ? AND name = ?
+        ''', (email, name))
+        conn.commit()
+        conn.close()
+
     def get_notes(self, email):
         conn = self.connect_db()
         cursor = conn.cursor()
@@ -112,6 +121,15 @@ class Database:
         cursor.execute('''
         INSERT INTO notes (email, title, text) VALUES (?, ?, ?)
         ''', (email, title, text))
+        conn.commit()
+        conn.close()
+
+    def delete_note(self, email, title):
+        conn = self.connect_db()
+        cursor = conn.cursor()
+        cursor.execute('''
+        DELETE FROM notes WHERE email = ? AND title = ?
+        ''', (email, title))
         conn.commit()
         conn.close()
 
