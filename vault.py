@@ -49,13 +49,22 @@ class Vault:
             password = self.encryption.decrypt_data(encrypted_password)
             print(f"Name: {name}, Username: {username}, Password: {password}, Website: {website}")
 
+    def delete_password(self):
+        if not self.email:
+            print("Please log in first.")
+            return
+        name = input("Enter the name of the password to delete: ")
+        self.db.delete_password(self.email, name)
+        print("Password deleted successfully!")
+
     def add_note(self):
         if not self.email:
             print("Please log in first.")
             return
         title = input("Enter title: ")
         text = input("Enter text: ")
-        self.db.add_note(self.email, title, text)
+        encrypted_text = self.encryption.encrypt_data(text)
+        self.db.add_note(self.email, title, encrypted_text)
         print("Note added successfully!")
 
     def view_notes(self):
@@ -63,37 +72,72 @@ class Vault:
             print("Please log in first.")
             return
         notes = self.db.get_notes(self.email)
-        for title, text in notes:
+        for title, encrypted_text in notes:
+            text = self.encryption.decrypt_data(encrypted_text)
             print(f"Title: {title}, Text: {text}")
+
+    def delete_note(self):
+        if not self.email:
+            print("Please log in first.")
+            return
+        title = input("Enter the title of the note to delete: ")
+        self.db.delete_note(self.email, title)
+        print("Note deleted successfully!")
 
     def run(self):
         while True:
-            print("\nMenu:")
-            print("1. Register")
-            print("2. Login")
-            print("3. Add Password")
-            print("4. View Passwords")
-            print("5. Add Note")
-            print("6. View Notes")
-            print("7. Exit")
-            choice = input("Enter choice: ")
-            match choice:
-                case '1':
-                    self.register_user()
-                case '2':
-                    self.login_user()
-                case '3':
-                    self.add_password()
-                case '4':
-                    self.view_passwords()
-                case '5':
-                    self.add_note()
-                case '6':
-                    self.view_notes()
-                case '7':
-                    break
-                case _:
-                    print("Invalid choice. Please try again.")
+            if not self.email:
+                print("\nMenu:")
+                print("1. Register")
+                print("2. Login")
+                print("3. Exit")
+                choice = input("Enter choice: ")
+                match choice:
+                    case '1':
+                        print()
+                        self.register_user()
+                    case '2':
+                        print()
+                        self.login_user()
+                    case '3':
+                        break
+                    case _:
+                        print()
+                        print("Invalid choice. Please try again.")
+            else:
+                print("\nMenu:")
+                print("1. Add Password")
+                print("2. View Passwords")
+                print("3. Delete Password")
+                print("4. Add Note")
+                print("5. View Notes")
+                print("6. Delete Note")
+                print("7. Exit")
+                choice = input("Enter choice: ")
+                match choice:
+                    case '1':
+                        print()
+                        self.add_password()
+                    case '2':
+                        print()
+                        self.view_passwords()
+                    case '3':
+                        print()
+                        self.delete_password()
+                    case '4':
+                        print()
+                        self.add_note()
+                    case '5':
+                        print()
+                        self.view_notes()
+                    case '6':
+                        print()
+                        self.delete_note()
+                    case '7':
+                        break
+                    case _:
+                        print()
+                        print("Invalid choice. Please try again.")
 
 if __name__ == '__main__':
     vault = Vault()

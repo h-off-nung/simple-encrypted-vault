@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405e0fe5-0092-426e-a531-922b554cd398" name="Changes" comment="Rename classes to avoid the word &quot;manager&quot;">
-      <change afterPath="$PROJECT_DIR$/vault.py" afterDir="false" />
+    <list default="true" id="405e0fe5-0092-426e-a531-922b554cd398" name="Changes" comment="Implement the main method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vault.py" beforeDir="false" afterPath="$PROJECT_DIR$/vault.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724833000332</updated>
-      <workItem from="1724833004163" duration="9709000" />
+      <workItem from="1724833004163" duration="12129000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize the project">
       <option name="closed" value="true" />
@@ -217,11 +216,46 @@
       <option name="project" value="LOCAL" />
       <updated>1724846774711</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Impelement the vault class for CLI">
+      <option name="closed" value="true" />
+      <created>1724851023751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724851023751</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implement methods to communicate with DB">
+      <option name="closed" value="true" />
+      <created>1724851047794</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724851047794</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implement the main method">
+      <option name="closed" value="true" />
+      <created>1724851063990</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724851063990</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize the project" />
@@ -229,12 +263,15 @@
     <MESSAGE value="Implement the encryption class" />
     <MESSAGE value="Refactor the database class to follow OOP" />
     <MESSAGE value="Rename classes to avoid the word &quot;manager&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename classes to avoid the word &quot;manager&quot;" />
+    <MESSAGE value="Impelement the vault class for CLI" />
+    <MESSAGE value="Implement methods to communicate with DB" />
+    <MESSAGE value="Implement the main method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement the main method" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/simple_encrypted_vault$database.coverage" NAME="database Coverage Results" MODIFIED="1724849634948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/simple_encrypted_vault$vault.coverage" NAME="vault Coverage Results" MODIFIED="1724849921654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/simple_encrypted_vault$main.coverage" NAME="main Coverage Results" MODIFIED="1724849946068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/simple_encrypted_vault$main.coverage" NAME="main Coverage Results" MODIFIED="1724853252989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/simple_encrypted_vault$encryption.coverage" NAME="encryption Coverage Results" MODIFIED="1724846070051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
