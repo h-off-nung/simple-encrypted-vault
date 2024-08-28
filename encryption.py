@@ -1,7 +1,7 @@
 import os
 from cryptography.fernet import Fernet
 
-class EncryptionManager:
+class Encryption:
     def __init__(self, key_file='secret.key'):
         self.key_file = key_file
         if not os.path.exists(self.key_file):
@@ -29,4 +29,4 @@ class EncryptionManager:
         return decrypted_data
 
 if __name__ == '__main__':
-    manager = EncryptionManager()
+    manager = Encryption()

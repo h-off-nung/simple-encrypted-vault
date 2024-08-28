@@ -1,6 +1,6 @@
 import sqlite3
 
-class DatabaseManager:
+class Database:
     def __init__(self, db_file='bobrov_vault.db'):
         self.db_file = db_file
 
@@ -42,5 +42,5 @@ class DatabaseManager:
         conn.close()
 
 if __name__ == '__main__':
-    db_manager = DatabaseManager()
+    db_manager = Database()
     db_manager.create_tables()
