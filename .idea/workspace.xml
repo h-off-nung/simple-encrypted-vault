@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405e0fe5-0092-426e-a531-922b554cd398" name="Changes" comment="Improve CLI and add the delete notes/passwords option">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="405e0fe5-0092-426e-a531-922b554cd398" name="Changes" comment="Fill out the readme file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724833000332</updated>
-      <workItem from="1724833004163" duration="12520000" />
+      <workItem from="1724833004163" duration="12919000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize the project">
       <option name="closed" value="true" />
@@ -254,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724853549140</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fill out the readme file">
+      <option name="closed" value="true" />
+      <created>1724854108553</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724854108553</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +288,8 @@
     <MESSAGE value="Implement the main method" />
     <MESSAGE value="Add methods to delete notes/passwords" />
     <MESSAGE value="Improve CLI and add the delete notes/passwords option" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve CLI and add the delete notes/passwords option" />
+    <MESSAGE value="Fill out the readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fill out the readme file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/simple_encrypted_vault$database.coverage" NAME="database Coverage Results" MODIFIED="1724849634948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
