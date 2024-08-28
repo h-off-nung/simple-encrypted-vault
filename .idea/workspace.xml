@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405e0fe5-0092-426e-a531-922b554cd398" name="Changes" comment="Implement the main method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vault.py" beforeDir="false" afterPath="$PROJECT_DIR$/vault.py" afterDir="false" />
+    <list default="true" id="405e0fe5-0092-426e-a531-922b554cd398" name="Changes" comment="Improve CLI and add the delete notes/passwords option">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724833000332</updated>
-      <workItem from="1724833004163" duration="12129000" />
+      <workItem from="1724833004163" duration="12520000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize the project">
       <option name="closed" value="true" />
@@ -240,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724851063990</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add methods to delete notes/passwords">
+      <option name="closed" value="true" />
+      <created>1724853500206</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724853500206</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Improve CLI and add the delete notes/passwords option">
+      <option name="closed" value="true" />
+      <created>1724853549140</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724853549140</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,12 +280,14 @@
     <MESSAGE value="Impelement the vault class for CLI" />
     <MESSAGE value="Implement methods to communicate with DB" />
     <MESSAGE value="Implement the main method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement the main method" />
+    <MESSAGE value="Add methods to delete notes/passwords" />
+    <MESSAGE value="Improve CLI and add the delete notes/passwords option" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve CLI and add the delete notes/passwords option" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/simple_encrypted_vault$database.coverage" NAME="database Coverage Results" MODIFIED="1724849634948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/simple_encrypted_vault$vault.coverage" NAME="vault Coverage Results" MODIFIED="1724849921654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/simple_encrypted_vault$main.coverage" NAME="main Coverage Results" MODIFIED="1724853252989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/simple_encrypted_vault$main.coverage" NAME="main Coverage Results" MODIFIED="1724853409039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/simple_encrypted_vault$encryption.coverage" NAME="encryption Coverage Results" MODIFIED="1724846070051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
