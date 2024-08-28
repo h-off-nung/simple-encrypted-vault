@@ -11,14 +11,14 @@ Welcome to The Simple Encrypted Vault, a secure and user-friendly password and n
 - `encryption.py`: Encryption and decryption utilities.
 ### Usage 🚀
 #### Initial Menu (Not Logged In)
-1. Register: Create a new user account.
-2. Login: Log in to your existing account.
-3. Exit: Exit the application.
+1. **Register:** Create a new user account.
+2. **Login:** Log in to your existing account.
+3. **Exit:** Exit the application.
 #### Main Menu (Logged In)
-1. Add Password: Add a new password entry. 
-2. View Passwords: View all stored passwords. 
-3. Delete Password: Delete a password entry. 
-4. Add Note: Add a new note. 
-5. View Notes: View all stored notes. 
-6. Delete Note: Delete a note. 
-7. Exit: Log out and exit the application.
+1. **Add Password:** Add a new password entry. 
+2. **View Passwords:** View all stored passwords. 
+3. **Delete Password:** Delete a password entry. 
+4. **Add Note:** Add a new note. 
+5. **View Notes:** View all stored notes. 
+6. **Delete Note:** Delete a note. 
+7. **Exit:** Log out and exit the application.
